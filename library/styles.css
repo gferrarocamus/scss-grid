@@ -179,19 +179,7 @@ body,
 p,
 a,
 li {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-button {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+  font-family: Garamond, Georgia, "Times New Roman", Times, serif;
 }
 
 h1,
@@ -199,33 +187,85 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
-  line-height: 1.5;
+h6,
+button {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", "FreeSans", sans-serif;
 }
 
-h1 {
-  font-size: 24px;
+a {
+  color: inherit;
 }
 
-h2 {
-  font-size: 20px;
-}
-
-h3 {
-  font-size: 18px;
-}
-
-h4 {
+/* 
+*
+* CSS with vertical rhythm
+* https://drewish.com/tools/vertical-rhythm/
+* 
+*/
+body {
   font-size: 16px;
 }
 
+p {
+  font-size: 1em;
+  /* 16px */
+  line-height: 1.125em;
+  /* 18px */
+  margin: 0 0 1.125em 0;
+}
+
+h1 {
+  font-size: 1.5em;
+  /* 24px */
+  line-height: 1.5em;
+  /* 36px */
+  margin-top: 0.75em;
+  margin-bottom: 0em;
+}
+
+h2 {
+  font-size: 1.375em;
+  /* 22px */
+  line-height: 1.6364em;
+  /* 36px */
+  margin-top: 0.8182em;
+  margin-bottom: 0em;
+}
+
+h3 {
+  font-size: 1.25em;
+  /* 20px */
+  line-height: 1.8em;
+  /* 36px */
+  margin-top: 0.9em;
+  margin-bottom: 0em;
+}
+
+h4 {
+  font-size: 1.125em;
+  /* 18px */
+  line-height: 1em;
+  /* 18px */
+  margin-top: 1em;
+  margin-bottom: 0em;
+}
+
 h5 {
-  font-size: 14px;
+  font-size: 1em;
+  /* 16px */
+  line-height: 1.125em;
+  /* 18px */
+  margin-top: 1.125em;
+  margin-bottom: 0em;
 }
 
 h6 {
-  font-size: 12px;
+  font-size: 0.875em;
+  /* 14px */
+  line-height: 1.2857em;
+  /* 18px */
+  margin-top: 1.2857em;
+  margin-bottom: 0em;
 }
 
 .bold {
@@ -234,6 +274,10 @@ h6 {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.decoration-none {
+  text-decoration: none;
 }
 
 *, *::after, *::before {
