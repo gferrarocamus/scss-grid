@@ -1,0 +1,57 @@
+$small-width: 480px;
+$medium-width: 992px;
+
+@import '_decimal-rounding.scss';
+
+.container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    @media screen and (max-width: $small-width){
+      width: 100%;
+    }
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+}
+
+[class*="col-"] {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 100%;
+  position: relative;
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        flex: 0 0 (100% / decimal-round((12 / #{$i}),5));
+        max-width: (100% / decimal-round((12 / #{$i}),5));
+    }
+}
+
+@media (max-width: $small-width) {
+    .expand-col-s {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: $medium-width) {
+    .expand-col-m {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

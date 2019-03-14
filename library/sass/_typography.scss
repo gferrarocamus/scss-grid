@@ -1,0 +1,65 @@
+$font-heading: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans,
+  sans-serif;
+$font-text: Georgia, "Times New Roman", Times, serif;
+
+html,
+body,
+p,
+a,
+li {
+  font-family: $font-text;
+}
+
+button {
+  font-family: $font-heading;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-heading;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

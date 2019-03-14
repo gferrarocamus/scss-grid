@@ -1,0 +1,39 @@
+@import 'reset';
+
+@import 'grid';
+
+@import 'typography';
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.d-table {
+    display: table;
+}
