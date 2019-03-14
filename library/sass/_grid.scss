@@ -3,6 +3,10 @@ $medium-width: 992px;
 
 @import '_decimal-rounding.scss';
 
+@function percent-calc($n) {
+    @return ((100% / 12) * $n);
+}
+
 .container {
     width: 90%;
     max-width: 1140px;
@@ -25,7 +29,6 @@ $medium-width: 992px;
     margin-left: -15px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: stretch;
 }
 
 [class*="col-"] {
@@ -37,8 +40,8 @@ $medium-width: 992px;
 
 @for $i from 1 through 12 {
     .col-#{$i} {
-        flex: 0 0 (100% / decimal-round((12 / #{$i}),5));
-        max-width: (100% / decimal-round((12 / #{$i}),5));
+        flex: 0 0 decimal-ceil(percent-calc(#{$i}),5);
+        max-width: decimal-ceil(percent-calc(#{$i}),5);
     }
 }
 

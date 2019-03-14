@@ -77,7 +77,6 @@ table {
   margin-left: -15px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: stretch;
 }
 
 [class*="col-"] {
@@ -88,8 +87,8 @@ table {
 }
 
 .col-1 {
-  flex: 0 0 8.33333%;
-  max-width: 8.33333%;
+  flex: 0 0 8.33334%;
+  max-width: 8.33334%;
 }
 
 .col-2 {
@@ -103,8 +102,8 @@ table {
 }
 
 .col-4 {
-  flex: 0 0 33.33333%;
-  max-width: 33.33333%;
+  flex: 0 0 33.33334%;
+  max-width: 33.33334%;
 }
 
 .col-5 {
@@ -118,8 +117,8 @@ table {
 }
 
 .col-7 {
-  flex: 0 0 58.33319%;
-  max-width: 58.33319%;
+  flex: 0 0 58.33334%;
+  max-width: 58.33334%;
 }
 
 .col-8 {
@@ -128,18 +127,18 @@ table {
 }
 
 .col-9 {
-  flex: 0 0 75.00019%;
-  max-width: 75.00019%;
+  flex: 0 0 75%;
+  max-width: 75%;
 }
 
 .col-10 {
-  flex: 0 0 83.33333%;
-  max-width: 83.33333%;
+  flex: 0 0 83.33334%;
+  max-width: 83.33334%;
 }
 
 .col-11 {
-  flex: 0 0 91.66659%;
-  max-width: 91.66659%;
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%;
 }
 
 .col-12 {
