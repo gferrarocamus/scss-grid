@@ -24,7 +24,7 @@ code {
     background-color: rgba(119, 136, 153, 0.2);
     padding: 1px;
 }
-.tooltip {
+.p-relative {
     position: relative;
 }
 .tooltip .tooltiptext {
@@ -34,8 +34,8 @@ code {
     text-align: center;
     padding: 8px;
     position: absolute;
-    top: 40%;
-    left: 8px;
+    top: 25px;
+    left: 25px;
     z-index: 1;
     font-size: 14px;
 }
