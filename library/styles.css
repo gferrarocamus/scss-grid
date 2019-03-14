@@ -60,7 +60,7 @@ table {
   padding-left: 15px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 575.98px) {
   .container {
     width: 100%;
   }
@@ -146,15 +146,29 @@ table {
   max-width: 100%;
 }
 
-@media (max-width: 480px) {
-  .expand-col-s {
+@media (max-width: 575.98px) {
+  .expand-col-xs {
     flex: 0 0 100%;
     max-width: 100%;
   }
 }
 
-@media (max-width: 992px) {
-  .expand-col-m {
+@media (max-width: 767.98px) {
+  .expand-col-sm {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .expand-col-md {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .expand-col-lg {
     flex: 0 0 100%;
     max-width: 100%;
   }
