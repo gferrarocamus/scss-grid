@@ -1,13 +1,19 @@
+body {
+    background-image: linear-gradient(to bottom right, white, rgba(112, 128, 144, 0.1));
+}
+header {
+    margin-bottom: 30px;
+}
 .main-h {
     padding: 20px 15px;
+    margin-top: 0;
 }
 .separator {
-    margin-bottom: 30px;
     color:darkgray;
-    background-color: darkgray;
-    box-shadow: none;
+    background-color: darkgray;    
 }
-.samples {
+.grid-samples,
+.typo-samples {
     margin-bottom: 50px;
 }
 .m-bottom{
@@ -21,10 +27,10 @@
 }
 code {
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgba(119, 136, 153, 0.2);
+    background-color: rgba(119, 136, 153, 0.3);
     padding: 1px;
 }
-.tooltip {
+.p-relative {
     position: relative;
 }
 .tooltip .tooltiptext {
@@ -34,21 +40,24 @@ code {
     text-align: center;
     padding: 8px;
     position: absolute;
-    top: 40%;
-    left: 8px;
+    top: 25px;
+    left: 25px;
     z-index: 1;
     font-size: 14px;
 }
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
-[class*="col-"] {
+.grid-samples [class*="col-"] {
     text-align: center;
     background-color: lightslategray;
     background-clip: content-box;
     border: 1px solid gray;
     word-wrap: break-word;
 }
-[class*="col-"]:nth-child(2n+2) {
+.grid-samples [class*="col-"]:nth-child(2n+2) {
     background-color: lightsteelblue;
+}
+.typo-samples {
+    text-align: center;
 }
