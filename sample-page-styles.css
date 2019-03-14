@@ -1,0 +1,54 @@
+.main-h {
+    padding: 20px 15px;
+}
+.separator {
+    margin-bottom: 30px;
+    color:darkgray;
+    background-color: darkgray;
+    box-shadow: none;
+}
+.samples {
+    margin-bottom: 50px;
+}
+.m-bottom{
+    margin-bottom: 10px;
+}
+.m-y {
+    margin: 10px 0;
+}
+.dark-border {
+    border: 1px solid darkgray;
+}
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(119, 136, 153, 0.2);
+    padding: 1px;
+}
+.tooltip {
+    position: relative;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    position: absolute;
+    top: 40%;
+    left: 8px;
+    z-index: 1;
+    font-size: 14px;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+[class*="col-"] {
+    text-align: center;
+    background-color: lightslategray;
+    background-clip: content-box;
+    border: 1px solid gray;
+    word-wrap: break-word;
+}
+[class*="col-"]:nth-child(2n+2) {
+    background-color: lightsteelblue;
+}
