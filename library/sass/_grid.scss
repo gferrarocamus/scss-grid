@@ -1,43 +1,46 @@
-@import '_decimal-rounding.scss';
+@import "_decimal-rounding.scss";
 
-$xs: 575.98px;// Extra small devices (portrait phones, less than 576px)
-$sm: 767.98px;// Small devices (landscape phones, less than 768px)
-$md: 991.98px;// Medium devices (tablets, less than 992px)
-$lg: 1199.98px;// Large devices (desktops, less than 1200px)
+/* 12-COLUMN GRID */
+
+//Breakpoints
+$xs: 575.98px; // Extra small devices (portrait phones, less than 576px)
+$sm: 767.98px; // Small devices (landscape phones, less than 768px)
+$md: 991.98px; // Medium devices (tablets, less than 992px)
+$lg: 1199.98px; // Large devices (desktops, less than 1200px)
 // Extra large devices (large desktops)
 // No media query since the extra-large breakpoint has no upper bound on its width
 
 @mixin expand-col {
-    flex: 0 0 100%;
-    max-width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 @function percent-calc($n) {
-    @return ((100% / 12) * $n);
+  @return ((100% / 12) * $n);
 }
 
 .container {
-    width: 90%;
-    max-width: 1140px;
-    margin: 0 auto;
-    padding-right: 15px;
-    padding-left: 15px;
-    @media screen and (max-width: $xs){
-      width: 100%;
-    }
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  @media screen and (max-width: $xs) {
+    width: 100%;
+  }
 }
 
 .container-fluid {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .row {
-    margin-right: -15px;
-    margin-left: -15px;
-    display: flex;
-    flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 [class*="col-"] {
@@ -48,32 +51,32 @@ $lg: 1199.98px;// Large devices (desktops, less than 1200px)
 }
 
 @for $i from 1 through 12 {
-    .col-#{$i} {
-        flex: 0 0 decimal-ceil(percent-calc(#{$i}),5);
-        max-width: decimal-ceil(percent-calc(#{$i}),5);
-    }
+  .col-#{$i} {
+    flex: 0 0 decimal-ceil(percent-calc(#{$i}), 5);
+    max-width: decimal-ceil(percent-calc(#{$i}), 5);
+  }
 }
 
 @media (max-width: $xs) {
-    .expand-col-xs {
-        @include expand-col;
-    }
+  .expand-col-xs {
+    @include expand-col;
+  }
 }
 
 @media (max-width: $sm) {
-    .expand-col-sm {
-        @include expand-col;
-    }
+  .expand-col-sm {
+    @include expand-col;
+  }
 }
 
 @media (max-width: $md) {
-    .expand-col-md {
-        @include expand-col;
-    }
+  .expand-col-md {
+    @include expand-col;
+  }
 }
 
 @media (max-width: $lg) {
-    .expand-col-lg {
-        @include expand-col;
-    }
+  .expand-col-lg {
+    @include expand-col;
+  }
 }

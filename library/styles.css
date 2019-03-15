@@ -52,6 +52,7 @@ table {
   border-spacing: 0;
 }
 
+/* 12-COLUMN GRID */
 .container {
   width: 90%;
   max-width: 1140px;
@@ -174,6 +175,7 @@ table {
   }
 }
 
+/* TYPOGRAPHY STYLES */
 html,
 body,
 p,
@@ -196,12 +198,6 @@ a {
   color: inherit;
 }
 
-/* 
-*
-* CSS with vertical rhythm
-* https://drewish.com/tools/vertical-rhythm/
-* 
-*/
 body {
   font-size: 16px;
 }
@@ -289,6 +285,7 @@ li {
   text-decoration: none;
 }
 
+/* OTHER UTILITIES */
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -297,6 +294,14 @@ li {
   content: "";
   display: table;
   clear: both;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
 }
 
 .d-none {
@@ -321,4 +326,16 @@ li {
 
 .d-table {
   display: table;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
 }
