@@ -50,7 +50,7 @@ I drew inspiration from [Bootstrap](https://getbootstrap.com/), although I was n
     <li>Different display classes are available for the main display property values, for example: <code>.d-none</code> and <code>.d-flex</code>.</li>
     <li>There are <code>.float-left</code> and <code>.float-right</code> classes, as well as a <code>.clearfix</code> class that can be applied to containers of floated elements, to clear both floats.</li>
     <li>For text-alignment, there's <code>.left</code>, <code>.right</code>, and <code>.center</code>.</li>
-    <li>I've used <a href="gist.github.com/terkel/4373420">these SCSS functions</a> to handle decimals, which are now part of this library as a partial.</li>
+    <li>I've used <a href="https://gist.github.com/terkel/4373420">these SCSS functions</a> to handle decimals, which are now part of this library as a partial.</li>
     <li>I've included <a href="https://meyerweb.com/eric/tools/css/reset/">Eric Meyer's reset</a> as a starting point.</li>
 </ul>
 
