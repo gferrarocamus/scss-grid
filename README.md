@@ -1,5 +1,3 @@
-# [scss-grid](https://gferrarocamus.github.io/scss-grid/sample-page.html)
-
 # SCSS Grid & Typography Library
 
 ## Introduction
@@ -61,3 +59,7 @@ To use this library, you can link the [styles.css stylesheet](https://github.com
 ## Sample
 
 You can see a live demo of the grid and typography styles that come with this library [here](https://gferrarocamus.github.io/scss-grid/sample-page.html).
+
+## License
+
+MIT © 2020 [Giuliana Ferraro](https://www.giulianaferraro.com/) <[giuliana.ferraro.dev@gmail.com](mailto:giuliana.ferraro.dev@gmail.com)>
